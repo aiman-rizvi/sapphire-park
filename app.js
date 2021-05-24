@@ -2,6 +2,7 @@ var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
 var cors = require("cors");
+app.set('port', 7414);
 
 app.use(cors());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -31,6 +32,6 @@ app.get("/visit", function(req, res){
 });
 
 // Start up server
-app.listen(3000, function(){
-    console.log("Park Site Server Has Started!");
+app.listen(app.get('port'), function(){
+    console.log('Express started on http://flip3.engr.oregonstate.edu:' + app.get('port') + '; press Ctrl-C to terminate.');
 });
