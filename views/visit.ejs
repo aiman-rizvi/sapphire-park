@@ -1,23 +1,25 @@
 <%- include ("partials/header") %>
-<link rel="stylesheet" href="/stylesheets/form.css" type="text/css">
+<script src="/scripts/contact-form.js" type="text/javascript"></script>
+<link rel="stylesheet" href="/stylesheets/visit.css" type="text/css">
 
-<h3>Contact Hours</h3>
+<div class="centered">
+<p class="heading">Contact Hours</p>
 <p> 9AM - 5PM Monday to Friday </p>
-<h3>Address</h3>
+<p class="heading">Address</p>
 <p> 123 Sapphire Park Way</p>
 <p> Somecity, Somestate</p>
 <p> 00000 </p>
-<h3>Phone Number</h3>
+<p class="heading">Phone Number</p>
 <p>000-000-0000</p>
-<h3>Resources</h3>
+<p class="heading">Resources</p>
 <form method="get" action="images/Sapphire_Park_Map.png" target="_blank">
     <button type="submit">Download the Park and Trail Map</button>
 </form>
 
-<h3>Contact Form</h3>
-<div class="container">
-    <script src="/scripts/contact-form.js" type="text/javascript"></script>
+<p class="heading">Contact Form</p>
+</div>
 
+<div class="container">
     <form>
         <fieldset>
             <label for="fname">First Name</label>
@@ -34,7 +36,6 @@
 
             <input type="submit" value="Submit" id="contact-form-submit">
         </fieldset>
-
     </form>
 </div>
 

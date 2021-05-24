@@ -1,0 +1,72 @@
+.amenities{
+    width:60%;
+    float:left;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+div.venue {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.venue-citation {
+    display: block;
+}
+
+.facilities{
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+}
+.facilities-citation{
+    display: block;
+}
+
+.events{
+    text-align: center;
+    width:35%;
+    float:right;
+    margin-top: 30px;
+}
+
+.middle-text{
+    padding: 15px;
+    text-align: center;
+}
+
+p{
+    font-size: large;
+}
+
+.splash, .bball{
+    height: 350px;
+    width: 350px;
+}
+
+.picnic{
+    height: 350px;
+    width: 400px;
+}
+
+.v1, .v3{
+    height: 400px;
+    width: 400px;
+}
+
+.v2{
+    height: 400px;
+    width: 300px;
+}
+
+.event{
+    color: white;
+    background-color: #333333;
+    height: fit-content;
+}
+
+.warning{
+    color: orangered;
+}

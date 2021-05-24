@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", bindFormButton);
 
 function bindFormButton() {
@@ -11,12 +10,17 @@ function bindFormButton() {
         var email = document.getElementById("email").value;
         var subject = document.getElementById("subject").value;
         req.open("POST", "http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php", true);  // open a POST request
-        req.setRequestHeader("Content-Type", "text/javascript");          // content header to let server know what we're sending
         req.setRequestHeader("Access-Control-Allow-Origin", "*");          // content header to let server know what we're sending
+        req.setRequestHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE");          // content header to let server know what we're sending
+        req.setRequestHeader("Access-Control-Allow-Headers", "Origin, Content-Type, Accept, Authorization, X-Request-With");          // content header to let server know what we're sending
+        req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");          // content header to let server know what we're sending
+        req.setRequestHeader("Accept", "*/*");
+
+
 
         // do below stuff after we get a response from our request
         req.addEventListener("load", function () {
-            console.log("form sent!")
+            console.log("form sent and response received!")
         });
 
         req.send(`firstName=${first_name}&lastName=${last_name}&email=${email}&subject=${subject}`);     // send the request with the data we are sending

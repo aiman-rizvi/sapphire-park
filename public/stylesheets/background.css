@@ -1,0 +1,26 @@
+.hist, .nature{
+    padding: 15px;
+}
+
+.scrollbox{
+    overflow:auto;
+    width:25%;
+    height:300px;
+    float:left;
+    padding:2px;
+    text-align: center
+}
+
+.hist > h1{
+    color: #04aa6d;
+}
+
+p{
+    font-size: larger;
+}
+
+.opener{
+    text-align: center;
+    padding:50px;
+}
+

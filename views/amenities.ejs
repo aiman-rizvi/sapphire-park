@@ -1,6 +1,7 @@
 <%- include ("partials/header") %>
+<link rel="stylesheet" href="/stylesheets/amenities.css" type="text/css">
 
-<div style="width:60%;float:left;">
+<div class="amenities">
     <p> With our wide range of amenities, our park has something for everyone!</p>
 
     <ul>
@@ -16,21 +17,50 @@
         <li>Restroom facilities</li>
     </ul>
 
-    <p> Families are welcome to use our amenities for their next family gathering!
-        All we ask is that families please keep our park clean and beautiful by disposing any trash in our numerous
-        trash and recycle bins before leaving the park. </p>
+    <div class="facilities">
+        <img class="splash" src="images/splash.jpg" alt="splashpad">
+        <a class="facilities-citation" href="https://www.cityofcapegirardeau.org/departments/parks/aquatics/capaha_park_splash_pad">image source</a>
+    </div>
+    <div class="facilities">
+        <img class="picnic" src="images/picnic.jpeg" alt="picnic">
+        <a class="facilities-citation" href="https://www.pexels.com/photo/three-women-sitting-on-benches-1141436/">image source</a>
+    </div>
+    <div class="facilities">
+        <img class="bball" src="images/bball.jpg" alt="basketball">
+        <a class="facilities-citation" href="https://parks.arlingtonva.us/wp-content/uploads/sites/17/2014/08/towers-park.jpg">image source</a>
+    </div>
 
+    <div class="middle-text">
+        <p> Families are welcome to use our amenities for their next family gathering!
+            All we ask is that families please keep our park clean and beautiful by disposing any trash in our numerous
+            trash and recycle bins before leaving the park. </p>
+        <br>
+        <p>In addition to our above amenities, our park also offers a large clubhouse that can host up to 100 people and is perfect for
+            weddings, large family reunions, graduation parties, and more! If interested, please inquire about booking the clubhouse by
+            phone or by filling out a contact form.</p>
 
-    <p>In addition to our above amenities, our park also offers a large clubhouse that can host up to 100 people and is perfect for
-        weddings, large family reunions, graduation parties, and more! If interested, please inquire about booking the clubhouse by
-        phone or by filling out a contact form.</p>
+    </div>
+
+    <div class="venue">
+    <img  class="v1" src="images/venue1.jpg" alt="venue1">
+    <a class="venue-citation" href="https://www.yelp.com/biz_photos/zilker-park-clubhouse-austin?select=dAgrFAKQvMdmtJvMp8XHaw&utm_campaign=www_photo_share_popup&utm_medium=copy_link&utm_source=(direct)">image source</a>
+    </div>
+    <div class="venue">
+    <img class="v2" src="images/venue2.jpg" alt="venue2">
+    <a class="venue-citation" href="https://www.yelp.com/biz_photos/zilker-park-clubhouse-austin?select=dAgrFAKQvMdmtJvMp8XHaw&utm_campaign=www_photo_share_popup&utm_medium=copy_link&utm_source=(direct)">image source</a>
+    </div>
+    <div class="venue">
+    <img class="v3" src="images/venue3.jpg" alt="venue3">
+    <a class="venue-citation" href="https://www.yelp.com/biz_photos/zilker-park-clubhouse-austin?select=dAgrFAKQvMdmtJvMp8XHaw&utm_campaign=www_photo_share_popup&utm_medium=copy_link&utm_source=(direct)">image source</a>
+    </div>
+
 </div>
 
-<div style="width:40%;float:right;">
+<div class="events">
     <h1>Check out our Events!</h1>
-    <p>Events are subject to weather conditions and may be cancelled short notice!</p>
+    <p class="warning">Events are subject to weather conditions and may be cancelled short notice!</p>
 
-    <h4>Movie in the Park - $7 per head, free for kids under age 3 </h4>
+    <p class="event">Movie in the Park - $7 per head, free for kids under age 3 </p>
     <p> All movies start promptly after sundown. </p>
     <p>SATURDAY, MARCH 6<br><em>Trolls</em></p>
     <p>SATURDAY, MAY 1<br><em>Mamma Mia!</em></p>
@@ -39,15 +69,12 @@
     <p>SATURDAY, SEPTEMBER 25<br><em>Black Panther</em></p>
     <p>SATURDAY, OCTOBER 30<br><em>Beetlejuice</em></p>
     <p>SATURDAY, DECEMBER 11<br><em>The Polar Express</em></p>
-
-    <h4>Guided Yoga - $5 per head</h4>
+    <br>
+    <p class="event">Guided Yoga - $5 per head</p>
     <p>SATURDAY MORNINGS at 8:30 AM, clear skies permitting.</p>
 
 
 </div>
-
-
-
 
 
 <%- include ("partials/footer") %>
