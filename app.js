@@ -1,14 +1,13 @@
 var express = require("express");
 var app = express();
-var bodyParser = require("body-parser");
+var bodyParser = require("body-parser");    // for POST requests
 var cors = require("cors");
-app.set('port', 7414);
 
 app.use(cors());
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({extended: true}));   // for POST requests
 
 app.set("view engine", "ejs");
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public'));     // to help ejs find things
 
 // Routes
 // Home
@@ -27,11 +26,11 @@ app.get("/amenities-events", function(req, res){
 });
 
 // Visitor's Info page
-app.get("/visit", function(req, res){
+app.get("/visit", cors(), function(req, res){
     res.render("visit");
 });
 
 // Start up server
-app.listen(app.get('port'), function(){
-    console.log('Express started on http://flip3.engr.oregonstate.edu:' + app.get('port') + '; press Ctrl-C to terminate.');
+app.listen(3000, function(){
+    console.log("Park Site Server Has Started!");
 });

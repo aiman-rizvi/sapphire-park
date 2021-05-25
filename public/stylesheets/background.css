@@ -11,6 +11,11 @@
     text-align: center
 }
 
+.scrollbox img {
+    width: 100px;
+    height: 90px;
+}
+
 .hist > h1{
     color: #04aa6d;
 }
@@ -24,3 +29,6 @@ p{
     padding:50px;
 }
 
+.hist{
+    margin-top: 285px;
+}
