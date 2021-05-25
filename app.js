@@ -8,6 +8,7 @@ app.use(bodyParser.urlencoded({extended: true}));   // for POST requests
 
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + '/public'));     // to help ejs find things
+app.set('port', 7414);
 
 // Routes
 // Home
@@ -30,7 +31,21 @@ app.get("/visit", cors(), function(req, res){
     res.render("visit");
 });
 
+// 404 Route
+app.use(function(req,res){
+    res.status(404);
+    res.render('404');
+});
+
+// 500 Route
+app.use(function(err, req, res, next){
+    console.error(err.stack);
+    res.type('plain/text');
+    res.status(500);
+    res.render('500');
+});
+
 // Start up server
-app.listen(3000, function(){
-    console.log("Park Site Server Has Started!");
+app.listen(app.get('port'), function(){
+    console.log('Express started on http://flip3.engr.oregonstate.edu:' + app.get('port') + '; press Ctrl-C to terminate.');
 });
